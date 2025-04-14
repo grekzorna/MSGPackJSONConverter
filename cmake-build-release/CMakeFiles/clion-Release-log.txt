@@ -1,4 +1,10 @@
-"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=C:/Users/Dell/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake "-DCONAN_COMMAND=D:\Program Files\Conan\conan\conan.exe" -G Ninja -S "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGEncrDecr" -B "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGEncrDecr\cmake-build-release"
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=C:/Users/Dell/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -DCONAN_COMMAND=C:\Users\Dell\AppData\Roaming\Python\Python313\Scripts\conan.exe Files\Conan\conan\conan.exe -G Ninja -S "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGPackJSONConverter" -B "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGPackJSONConverter\cmake-build-release"
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release/Files/Conan/conan/conan.exe"
+
+
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
@@ -11,28 +17,101 @@
 -- Check for working CXX compiler: C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
-CMake Error at conan_provider.cmake:515 (message):
-  CMake-Conan: Error when trying to run Conan
-Call Stack (most recent call first):
-  conan_provider.cmake:566 (conan_get_version)
-  CMakeLists.txt:13 (find_package)
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\Dell\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=GNU
+-- CMake-Conan: CMake compiler version=13.1.0
+-- CMake-Conan: [settings] compiler=gcc
+-- CMake-Conan: [settings] compiler.version=13
+-- Performing Test _conan_is_gnu_libstdcxx
+-- Performing Test _conan_is_gnu_libstdcxx - Success
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi
+-- Performing Test _conan_gnu_libstdcxx_is_cxx11_abi - Success
+-- CMake-Conan: Creating profile D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=13
+compiler.cppstd=20
+compiler.libcxx=libstdc++11
+build_type=Release
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"c":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe","cpp":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe","rc":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"}
+
+-- CMake-Conan: Installing single configuration Release
+-- CMake-Conan: conan install D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter -of=D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release/conan --profile:host=default;--profile:host=D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=20
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+[conf]
+tools.build:compiler_executables={'c': 'C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe', 'cpp': 'C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe', 'rc': 'C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
 
 
-CMake Warning at CMakeLists.txt:13 (find_package):
-  By not providing "Findtaocpp-json.cmake" in CMAKE_MODULE_PATH this project
-  has asked CMake to find a package configuration file provided by
-  "taocpp-json", but CMake did not find one.
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter\conanfile.py
+Requirements
+    taocpp-json/1.0.0-beta.14#6625bbc6f81b28f09333efd12ff89e17 - Cache
+    taocpp-pegtl/3.2.7#4fce7afbf9f9e5c686c38d8deef7cdc8 - Cache
 
-  Could not find a package configuration file provided by "taocpp-json" with
-  any of the following names:
+======== Computing necessary packages ========
+Requirements
+    taocpp-json/1.0.0-beta.14#6625bbc6f81b28f09333efd12ff89e17:da39a3ee5e6b4b0d3255bfef95601890afd80709#e65661e12c8b140444943769c489af3d - Cache
+    taocpp-pegtl/3.2.7#4fce7afbf9f9e5c686c38d8deef7cdc8:da39a3ee5e6b4b0d3255bfef95601890afd80709#6e51780c75b577aa0844220a73c663b0 - Cache
 
-    taocpp-jsonConfig.cmake
-    taocpp-json-config.cmake
+======== Installing packages ========
+taocpp-pegtl/3.2.7: Already installed! (1 of 2)
+taocpp-json/1.0.0-beta.14: Already installed! (2 of 2)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.filenames' used in: taocpp-pegtl/3.2.7, taocpp-json/1.0.0-beta.14
+WARN: deprecated:     'cpp_info.names' used in: taocpp-pegtl/3.2.7, taocpp-json/1.0.0-beta.14
 
-  Add the installation prefix of "taocpp-json" to CMAKE_PREFIX_PATH or set
-  "taocpp-json_DIR" to a directory containing one of the above files.  If
-  "taocpp-json" provides a separate development package or SDK, be sure it
-  has been installed.
-
-
--- Configuring incomplete, errors occurred!
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGPackJSONConverter\cmake-build-release\conan\build\Release\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(taocpp-json)
+    target_link_libraries(... taocpp::json)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGPackJSONConverter\cmake-build-release\conan\build\Release\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators\conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py: CMakeToolchain generated: D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGPackJSONConverter\cmake-build-release\conan\build\Release\generators\CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release/conan/build/Release/generators
+-- CMake-Conan: CONANFILE=D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/conanfile.py
+-- Conan: Component target declared 'taocpp::json'
+-- CMake-Conan: find_package(pegtl) found, 'conan install' already ran
+-- Conan: Component target declared 'taocpp::pegtl'
+-- Configuring done (11.0s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/Moje programy i strony/Jezyki/C i C++/Special Projects/MSGPackJSONConverter/cmake-build-release

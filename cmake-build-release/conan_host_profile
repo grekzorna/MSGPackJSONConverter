@@ -8,4 +8,4 @@ compiler.libcxx=libstdc++11
 build_type=Release
 [conf]
 tools.cmake.cmaketoolchain:generator=Ninja
-tools.build:compiler_executables={"c":"D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe","cpp":"D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe","rc":"D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"}
+tools.build:compiler_executables={"c":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe","cpp":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe","rc":"C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"}

@@ -10,9 +10,13 @@ std::string out;
 
 std::string decryption(int begin_offset, int end_offset, std::string path);
 std::string encryption(int begin_offset, int end_offset, std::string path);
+void pocket_program(int argc, char** argv);
 
 int main(int argc, char** argv)
 {
+    if (argc > 1) {
+        pocket_program(argc, argv);
+    }
     printf("1 for MSGPack->JSON 2 for JSON->MSGPack\n");
     char choice;
     choice = getchar();
@@ -73,4 +77,26 @@ std::string encryption(int begin_offset, int end_offset, std::string path) {
     tao::json::value v = tao::json::from_string(str_buffer);
     std::string ret = tao::json::msgpack::to_string(v);
     return ret;
+}
+
+void pocket_program(int argc, char** argv) {
+    filename = argv[1];
+    std::string out_buffer;
+    if (argc < 3) {
+        out = filename + ".json";
+    }
+    else {
+        out = argv[2];
+    }
+    std::ifstream in(filename, std::ios::in);
+    char first_char = in.get();
+    if (first_char == '{') {
+        out_buffer = decryption(0, 0, filename);
+    }
+    else {
+        std::string buffer = std::string(std::istreambuf_iterator<char>(in), std::istreambuf_iterator<char>());
+        out_buffer = encryption(0, 0, filename);
+    }
+    std::ofstream file(out, std::ios::out);
+    file << out_buffer;
 }

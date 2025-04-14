@@ -19,14 +19,14 @@
                 "CMAKE_BUILD_TYPE": "Release"
             },
             "toolchainFile": "generators\\conan_toolchain.cmake",
-            "binaryDir": "H:\\Moje programy i strony\\Jezyki\\C i C++\\Special Projects\\MSGEncrDecr\\cmake-build-release\\conan\\build\\Release"
+            "binaryDir": "D:\\Moje programy i strony\\Jezyki\\C i C++\\Special Projects\\MSGPackJSONConverter\\cmake-build-release\\conan\\build\\Release"
         }
     ],
     "buildPresets": [
         {
             "name": "conan-release",
             "configurePreset": "conan-release",
-            "jobs": 12
+            "jobs": 8
         }
     ],
     "testPresets": [

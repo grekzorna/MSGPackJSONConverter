@@ -23,9 +23,9 @@ endif()
 
 ########## 'compilers' block #############
 
-set(CMAKE_C_COMPILER "D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe")
-set(CMAKE_RC_COMPILER "D:/Users/ja/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe")
+set(CMAKE_C_COMPILER "C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe")
+set(CMAKE_RC_COMPILER "C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe")
 
 
 ########## 'arch_flags' block #############
@@ -137,9 +137,9 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/ja/.conan2/p/taocp27097aa57be5d/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/ja/.conan2/p/taocp84aef767d5bc6/p/include" "C:/Users/ja/.conan2/p/taocp27097aa57be5d/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "C:/Users/ja/.conan2/p/taocp27097aa57be5d/p/bin" )
+list(PREPEND CMAKE_LIBRARY_PATH "C:/Users/Dell/.conan2/p/taocp27097aa57be5d/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Dell/.conan2/p/taocp84aef767d5bc6/p/include" "C:/Users/Dell/.conan2/p/taocp27097aa57be5d/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "C:/Users/Dell/.conan2/p/taocp27097aa57be5d/p/bin" )
 
 endif()
 

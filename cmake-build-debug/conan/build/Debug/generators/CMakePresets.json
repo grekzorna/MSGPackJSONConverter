@@ -19,14 +19,14 @@
                 "CMAKE_BUILD_TYPE": "Debug"
             },
             "toolchainFile": "generators\\conan_toolchain.cmake",
-            "binaryDir": "H:\\Moje programy i strony\\Jezyki\\C i C++\\Special Projects\\MSGEncrDecr\\cmake-build-debug\\conan\\build\\Debug"
+            "binaryDir": "D:\\Moje programy i strony\\Jezyki\\C i C++\\Special Projects\\MSGPackJSONConverter\\cmake-build-debug\\conan\\build\\Debug"
         }
     ],
     "buildPresets": [
         {
             "name": "conan-debug",
             "configurePreset": "conan-debug",
-            "jobs": 12
+            "jobs": 8
         }
     ],
     "testPresets": [
