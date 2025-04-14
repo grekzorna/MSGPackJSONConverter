@@ -1,0 +1,38 @@
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Dell/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake "-DCONAN_COMMAND=D:\Program Files\Conan\conan\conan.exe" -G Ninja -S "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGEncrDecr" -B "D:\Moje programy i strony\Jezyki\C i C++\Special Projects\MSGEncrDecr\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Dell/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at conan_provider.cmake:515 (message):
+  CMake-Conan: Error when trying to run Conan
+Call Stack (most recent call first):
+  conan_provider.cmake:566 (conan_get_version)
+  CMakeLists.txt:13 (find_package)
+
+
+CMake Warning at CMakeLists.txt:13 (find_package):
+  By not providing "Findtaocpp-json.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "taocpp-json", but CMake did not find one.
+
+  Could not find a package configuration file provided by "taocpp-json" with
+  any of the following names:
+
+    taocpp-jsonConfig.cmake
+    taocpp-json-config.cmake
+
+  Add the installation prefix of "taocpp-json" to CMAKE_PREFIX_PATH or set
+  "taocpp-json_DIR" to a directory containing one of the above files.  If
+  "taocpp-json" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+-- Configuring incomplete, errors occurred!
